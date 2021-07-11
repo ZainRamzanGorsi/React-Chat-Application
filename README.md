@@ -1,3 +1,3 @@
 # React Chat Application
 
-`React Js` `Redux` `Google Firebase`
+Develop using `React Js` `Redux` `Google Firebase`
