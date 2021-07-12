@@ -8,7 +8,7 @@ class App extends React.Component {
     console.log("Props ===>",this.props);
     return (
       <div>
-        <h1>React-Redux Chat Application</h1>
+        <h1>React Chat Application</h1>
         <button onClick={()=>this.props.set_data()}>Set Data to Redux</button>
       </div>
     )
