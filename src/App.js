@@ -9,7 +9,8 @@ class App extends React.Component {
     return (
       <div>
         <h1>React Chat App</h1>
-        <button onClick={()=>this.props.set_data()}>Set Data to Redux</button>
+        <button onClick={()=>this.props.set_data()}>Set Data to Redux</button><br></br><br></br><br></br><br></br>
+        <button style={{width: 400}}>Continue with FACEBOOK</button>
       </div>
     )
   }
