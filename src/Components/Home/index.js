@@ -9,7 +9,10 @@ class App extends React.Component {
     return (
       <div>
         <h1>React Chat Application</h1>
-        <button onClick={()=>this.props.set_data()}>Set Data to Redux</button>
+        {/* <button onClick={()=>this.props.set_data()}>Set Data to Redux</button> */}
+        <input type='text' placeholder='Enter Your Name' required/><br/><br/>
+        <button>Start the Chat</button>
+        
       </div>
     )
   }
