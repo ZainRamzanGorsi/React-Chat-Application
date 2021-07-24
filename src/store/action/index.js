@@ -1,14 +1,9 @@
-const set_data = () => {
+const get_username = () => {
     return (dispatch) => {
-        dispatch(
-            {
-                type: "SetData",
-                payload: {
-                    username: e.target.value
-                }
-            }
-        )
+            dispatch({
+                type:"Get_Username",users:{username: "gorsi"}
+            })
         }
 }
 
-export default set_data
+export default get_username

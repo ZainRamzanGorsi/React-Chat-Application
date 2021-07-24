@@ -1,20 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import set_data from '../../store/action';
+import get_username from '../../store/action';
 import './style.css'
 
 class App extends React.Component {
-    getUserName = (e) => {
-        this.setState({
-            username: e.target.value
-        })
-    }
     render() {
+        console.log("Props ===> ",this.props);
         return (
             <div>
                 <h1>React Chat Application</h1>
-                <input type='text' placeholder='Enter Your Name' required onChange={(e) => this.getUserName(e)} /><br /><br />
-                <button onClick={()=>this.getUserName()}>Start the Chat</button>
+                <input name='username' type='text' placeholder='Enter Your Name' onChange={(e)=> e.target.value} /> <br /><br />
+                <button onClick={()=>this.props.get_username()}>Start the Chatting</button>
 
             </div>
         )
@@ -22,11 +18,11 @@ class App extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-    user: state.user
+    username: state.user
 })
 
 const mapDispatchToProps = (dispatch) => ({
-    set_data: () => dispatch(set_data()),
+    get_username: () => dispatch(get_username()),
 })
 
 
