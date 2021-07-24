@@ -4,8 +4,7 @@ const set_data = () => {
             {
                 type: "SetData",
                 payload: {
-                    name: "Hamza Ramzan",
-                    email: "hamzaramzan@gmail.com"
+                    username: e.target.value
                 }
             }
         )

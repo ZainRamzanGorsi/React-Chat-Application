@@ -1,8 +1,7 @@
 const Initial_State = {
     user: [
         {
-            name: "Zain Ramzan",
-            email: "zainramzan7133@gmail.com"
+            username: "Zain Ramzan",
         }
     ]
 }
