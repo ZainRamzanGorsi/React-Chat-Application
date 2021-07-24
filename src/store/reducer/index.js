@@ -6,12 +6,12 @@ const Initial_State = {
     ]
 }
 
-export default (state = Initial_State,action) => {
+export default (state = Initial_State) => {
     switch (action.type) {
-        case "Get_Username":
+        case "GetUsername":
             return ({
-                ...state,
-                user: [...state.user, action.users]
+                state,
+                user: [...state.user, action.payload]
             })
     }
 
